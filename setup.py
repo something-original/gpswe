@@ -1,7 +1,7 @@
 #!/user/bin/env python
 
 from io import open
-from setuptools import setup
+from setuptools import setup, find_packages
 
 """
 :authors: Ivan Kudinov
@@ -35,7 +35,7 @@ setup(
 
     license='The MIT License (MIT) see LICENSE file',
 
-    packages=['gpswe'],
+    packages=find_packages(),
     install_requires=["asgiref", "asyncio", "pydantic", "crcmod", "asyncpg", "geopy"],
 
     classifiers=[
